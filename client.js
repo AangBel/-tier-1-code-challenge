@@ -6,7 +6,7 @@ You’ve been given an index.html file and this starter js file.
 */
 
 console.log('Step 0 complete! client.js loaded!');
-
+console.log('this is the right file');
 // Write your code here!
 
 // 1. Start with the number 29 and set that equal to a variable named ‘highScore’;
@@ -45,10 +45,13 @@ myScrabbleTiles.push(
 //console.log(myScrabbleTiles);
 // 6. Complete this function. It needs to be given an array of tile objects. 
 //The function will use a for-loop and return the sum of all the scores in the given array.
-function sumTiles(myScrabbleTiles) {
-  for (let i= 0; i < myScrabbleTiles.length; i++) {
-    console.log(sum += myScrabbleTiles[i]);
-}
+function sumTiles(tilesArray) {
+  let sum = 0;
+  for (let i = 0; i < tilesArray.length; i++) {
+    sum += tilesArray[i].score;
+  }
+  return sum;
+
 }
 
 // 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called "myScore".
