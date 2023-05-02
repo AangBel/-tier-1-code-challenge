@@ -42,23 +42,41 @@ myScrabbleTiles.pop();
 myScrabbleTiles.push(
   { tile: 'F', score: 4 }
 );
+
 //console.log(myScrabbleTiles);
 // 6. Complete this function. It needs to be given an array of tile objects. 
 //The function will use a for-loop and return the sum of all the scores in the given array.
 function sumTiles(tilesArray) {
   let sum = 0;
-  for (let i = 0; i < tilesArray.length; i++) {
+  for (let i = 0; i < tilesArray.length; i += 1) {
     sum += tilesArray[i].score;
+
+    //temp = tilesArray[i];
+
+    // sum = 
+    //sum = ()
+    //sum += tilesArray[i]
   }
+
   return sum;
 
 }
 
-// 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called "myScore".
+// 7. Use the function above to get the total score for myScrabbleTiles and 
+//assign the value to a variable called "myScore".
+
+let myScore = sumTiles(myScrabbleTiles);
+console.log(`my score is  ${myScore}`);
 
 
 // 8. Check whether or not your score is higher than the highScore.
-// 8-1 If your score is higher, change highScore to the new high score.
+// 8.1 If your score is higher, change highScore to the new high score.
 
+if(myScore > highScore){
+  myScore === highScore
+} else {
+  console.log('try again')
+}
+console.log(`the high score is currently  ${highScore} `) //when using bling you gotta use the ticks
 
 // DONE!
