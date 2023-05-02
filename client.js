@@ -11,6 +11,7 @@ console.log('this is the right file');
 
 // 1. Start with the number 29 and set that equal to a variable named ‘highScore’;
 let highScore = 29;
+console.log('the current high score is 29 ');
 // 2. Make a new empty array called myScrabbleTiles.
 let myScrabbleTiles = [];
 // 3. Put these 6 tile objects into myScrabbleTiles:
@@ -73,10 +74,10 @@ console.log(`my score is  ${myScore}`);
 // 8.1 If your score is higher, change highScore to the new high score.
 
 if(myScore > highScore){
-  myScore === highScore
+  highScore = 30;
 } else {
   console.log('try again')
 }
-console.log(`the high score is currently  ${highScore} `) //when using bling you gotta use the ticks
+console.log(`the high score is now  ${highScore} `) //when using bling you gotta use the ticks
 
 // DONE!
